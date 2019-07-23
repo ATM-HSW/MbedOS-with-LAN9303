@@ -1,0 +1,11 @@
+{
+	"macros": ["LENGTH(a)=(sizeof(a)/sizeof(a[0]))",
+               "USE_USER_DEFINED_HAL_ETH_MSPINIT"],
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200,
+            "platform.default-serial-baud-rate": 115200,
+            "lwip.tcp-enabled": 0
+        }
+    }
+}
